@@ -5,7 +5,7 @@ const AboutSection = styled.section`
   display: flex;
   margin-top:0;
   text-align: center;
-  border-top:2px solid rgba(233, 225, 233, 1)
+  border-top:2px solid rgba(233, 225, 233, 1);
 `;
 
 // Titre

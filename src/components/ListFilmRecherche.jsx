@@ -13,12 +13,12 @@ export default  function ListFilmRecherche({movies}){
 
 return(
 
-<div className={styles.list}>
+<div className={titre?.trim() ? styles.listrech : styles.list}>
 
 {filteredMovies.length > 0 ? (
 
       filteredMovies.map((movie) => (
-        <div key={movie.id} className={styles.carte}>
+        <div key={movie.id} className={titre?.trim() ? styles.carterech : styles.carte}>
             <img src={movie.image_url} alt="Film 1" className={styles.carteimage} />
             <div className={styles.cartecontenu}>
            
@@ -37,7 +37,7 @@ return(
     
     
     ): (
-        <p>Aucun film trouvé pour "{titre}"</p>
+        <div className={styles.message}>Aucun film trouvé pour "{titre}"</div>
       )
       
       }

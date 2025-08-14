@@ -1,0 +1,42 @@
+
+p{
+
+    font-size: 15px;
+}
+
+.detailfilm {
+    background-color: rgb(245, 248, 250);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 150px;
+  padding-left: 100px;
+  display: flex;             /* Met image et texte côte à côte */
+  align-items: flex-start;   /* Aligne en haut */
+  gap: 20px;                 /* Espace entre image et infos */
+}
+
+.carteimage {
+  width: 350px;          /* Largeur fixe de l'image */
+  height: auto;              /* Garde les proportions */
+  border-radius: 8px;
+  margin-right: 60px;
+}
+
+.prix{
+    color: rgb(212, 132, 34);
+}
+h2{
+font-weight: 400;
+color:black;
+}
+
+.info {
+  flex: 1;                   /* Prend tout l'espace restant */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;                 
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  justify-content: space-between;
+  line-height: 30px; /* Si tu veux espacer */
+  color: gray;
+}

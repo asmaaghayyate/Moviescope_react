@@ -9,7 +9,6 @@ export default  function Footer(){
             <p>&copy; {new Date().getFullYear()} Moviescope. Tous droits réservés.</p>
             <p>
             <a href="/about" className="">À propos</a> | 
-            <a href="/contact" className=""> Contact</a>
             </p>
 
 

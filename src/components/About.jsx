@@ -6,6 +6,15 @@ const AboutSection = styled.section`
   margin-top:0;
   text-align: center;
   border-top:2px solid rgba(233, 225, 233, 1);
+
+@media (max-width: 768px) {
+
+  flex-direction: column; /* Form et nav-links en colonne */
+  padding: 10px;
+
+
+}
+
 `;
 
 // Titre
@@ -35,6 +44,14 @@ line-height:60px;
   border-top-right-radius: 300px;
 border-bottom-left-radius: 300px;
   border-bottom-right-radius: 300px;
+
+  @media (max-width: 768px) {
+  width: 300px;
+    height: auto;
+  margin-left:80px;
+  margin-bottom:20px;
+
+  }
 `;
 const P = styled.strong`
   font-size: 31.5pt;
@@ -42,8 +59,11 @@ const P = styled.strong`
     letter-spacing: -0.75pt;
     font-family:Arial	;
       font-weight: 300;
-
 `;
+
+
+
+
 export default function About() {
   return (
    <AboutSection>

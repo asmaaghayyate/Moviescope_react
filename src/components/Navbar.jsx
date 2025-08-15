@@ -24,7 +24,7 @@ const handleSearch = (e) => {
   return (
       <>
 
-  <header className="navbar">
+  <header className={menuOpen ? "navbar active" : "navbar"}>
     <div className="logoburger">
 
      <div className="logo">MovieScope</div>
@@ -36,10 +36,10 @@ const handleSearch = (e) => {
      
 
        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-        <li><Link  className="nav-link" to="/">Accueil</Link></li>
-        <li><Link className="nav-link" to="/about">À propos</Link></li>
+        <li><Link  className={menuOpen ? "nav-link active" : "nav-link"} to="/">Accueil</Link></li>
+        <li><Link className={menuOpen ? "nav-link active" : "nav-link"} to="/about">À propos</Link></li>
       </ul>
-       <form className="form" role="search" >
+       <form className={menuOpen ? "form active" : "form"} role="search" >
              <input
               className="search"
               type="search"

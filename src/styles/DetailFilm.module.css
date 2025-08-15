@@ -40,3 +40,16 @@ color:black;
   line-height: 30px; /* Si tu veux espacer */
   color: gray;
 }
+
+@media (max-width: 768px) {
+  .detailfilm{
+      flex-direction: column;
+ padding-left: 72px;
+  }
+
+  .info {
+padding-right:20px ;
+    width:350px;
+  }
+
+}

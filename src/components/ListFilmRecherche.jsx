@@ -37,7 +37,10 @@ return(
     
     
     ): (
-        <div className={styles.message}>Aucun film trouvé pour "{titre}"</div>
+        <div className={styles.message}>
+         <strong>Cherchez-vous quelque chose en particulier ?</strong> 
+    Malheureusement, nous n'avons pas trouvé de résultat correspondant à votre recherche.
+          </div>
       )
       
       }

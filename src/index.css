@@ -58,8 +58,8 @@ a{
 .search{
 
   width: 500px;
-  height: 40px;
-  border-radius: 20px;
+  height: 50px;
+  border-radius: 40px;
   border: 1px solid rgb(196, 196, 200); /* couleur + style + épaisseur */
   padding-left: 15px;
   padding-top: 10px;
@@ -124,6 +124,8 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  
+   
 }
 
 .navbar{
@@ -133,6 +135,9 @@ footer {
 
 }
 
+
+
+
   .menu-toggle {
     display: block;
 }
@@ -141,35 +146,54 @@ footer {
 .logo{
  padding-left: 0;
 margin-left: 0;
+  font-size: 20px;
+
+}
+
+.search{
+  width: 455px;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid rgb(196, 196, 200); /* couleur + style + épaisseur */
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
 }
 
 
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background:white;
-    margin-bottom: 70px;
-    position: absolute;
-    top: 60px;
-    width: 444px;
-    right: 20px;
-    padding: 10px;
-      z-index: 10; /* menu au-dessus */
+  display: none;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 4px;
+  margin-top: 40px;
+  padding: 7px;
+  position: absolute;
+  width: 480px;
+  height: 100px;
+  margin-left: 21px;
 
-  }
+}
+
+.nav-link.active{
+  border-bottom: 1px solid rgb(206, 202, 202);
+  font-size: 17px;
+    padding-left: 10px;
+   width: 600px;
+}
+
 
   .form{
-  position: relative;
-  z-index: 1; /* form derrière */
-  margin-left: 65px;
+  margin-left: 75px;
   margin-top: 30px;
 
 }
 
   .nav-links.active {
     display: flex;
-    
+
   }
 
  

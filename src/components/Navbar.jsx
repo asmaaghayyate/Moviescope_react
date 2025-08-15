@@ -36,8 +36,8 @@ const handleSearch = (e) => {
      
 
        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-        <li><Link  className={menuOpen ? "nav-link active" : "nav-link"} to="/">Accueil</Link></li>
-        <li><Link className={menuOpen ? "nav-link active" : "nav-link"} to="/about">À propos</Link></li>
+        <li className={menuOpen ? "navlink active" : "navlink"}><Link  className="nav-link" to="/">Accueil</Link></li>
+        <li className={menuOpen ? "navlink active" : "navlink"}><Link className="nav-link" to="/about">À propos</Link></li>
       </ul>
        <form className={menuOpen ? "form active" : "form"} role="search" >
              <input

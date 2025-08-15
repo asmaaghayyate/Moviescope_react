@@ -88,11 +88,28 @@
 }
 
 @media (max-width: 768px) {
+
+.message{
+
+   margin-left: 35px;
+  font-size: 20px;
+  width: 300px;
+}
+
+ .listrech {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  }
+
+  .carterech{
+       width: 180px;
+  }
   .list {
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
     max-width: 100%;
   }
 }
+
+
 
 @media (max-width: 480px) {
   .list {
